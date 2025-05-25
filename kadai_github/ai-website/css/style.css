@@ -1,0 +1,90 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Mincho", serif;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.header-nav a:hover {
+    opacity: 0.8;
+}
+
+/* メインコンテンツ */
+main {
+    background-color: lightcyan;
+    min-height: calc(100vh - 200px); /* ヘッダーとフッターの高さを考慮 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* フッター */
+footer {
+    background-color: lightcyan;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .header-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+} 
